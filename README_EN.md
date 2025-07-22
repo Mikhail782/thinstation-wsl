@@ -19,7 +19,7 @@ git clone https://github.com/Mikhail782/thinstation-wsl.git
 Installing the chroot:
 
 ```Bash
-cd thinstation-wsl && sudo ./setup-chroot
+cd thinstation-wsl && sudo ./setup-wsl
 ```
 
 Building a boot image:
