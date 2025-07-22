@@ -1,0 +1,19 @@
+#!/bin/bash
+setup_wsl()
+{
+	dnf_install dbus dbus-tools
+	systemd-machine-id-setup
+	dbus-uuidgen --ensure
+}
+
+dnf_install () {
+	for pkg in "$@"; do
+		if ! rpm -q "$pkg" &> /dev/null; then
+			dnf install -y "$pkg"
+		fi
+	done
+}
+
+grep -qi microsoft /proc/version && echo "WSL detected!" && setup_wsl
+
+sudo bash ./setup-chroot
