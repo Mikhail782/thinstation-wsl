@@ -82,6 +82,7 @@ if ! pkg_initialized $PACKAGE; then
 				if [ "$vdioption" == "lockserver" ] ; then vdioption="lockServer" ; fi
 				if [ "$vdioption" == "sslprotocolstring" ] ; then vdioption="sslProtocolString" ; fi
 				if [ "$vdioption" == "sslcipherstring" ] ; then vdioption="sslCipherString" ; fi
+				if [ "$vdioption" == "enablemmr" ] ; then vdioption="enableMMR" ; fi
 
 				case $vdioption in
 				fullscreen|allmonitors|nonInteractive|unattended|keep-wm-bindings|once|printEnvironmentInfo|enableNla|kioskLogin|save|nomenubar|lockServer)

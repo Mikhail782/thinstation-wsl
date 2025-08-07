@@ -17,6 +17,7 @@
 #WIRELESS_KEY               # Encryption key : 4567-89AB-CD, s:password
 #WIRELESS_WPAKEY            # WPA/WPA2 pre-shared key (PSK): at least 8 ASCII characters
 #WIRELESS_DRIVER            # Driver name for WPA/WPA2 support
+#WIRELESS_RND_MAC           # can be set to "permanent" to force use of hardware MAC instead of a random MAC
 
 WIRELESS_ESSID="ssid"
 WIRELESS_NWID=""

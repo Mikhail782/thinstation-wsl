@@ -194,7 +194,7 @@ package freerdp              # RDP client
 #package udsclient            # UDS Virtual Cable agent
 #package ica                  # Citrix ICA
 #package vmview               # VMware Horizon (Legacy 8.13.0 or lower)
-#package horizon              # Omnissa Horizon (8.14.0)
+#package horizon              # Omnissa Horizon (8.14.0 or newer)
 #package spice                # virt-viewer package for spice and vnc
 #package thinlinc             # Cendio ThinLinc
 

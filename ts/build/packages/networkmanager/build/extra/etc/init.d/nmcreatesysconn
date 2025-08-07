@@ -215,6 +215,11 @@ ssid=$WIRELESS_ESSID
 mode=$WIRELESS_MODE
 EOF
 
+    # Check if MAC policy is provided
+    if [ -n "$WIRELESS_RND_MAC" ]; then
+        echo "cloned-mac-address=$WIRELESS_RND_MAC" >> $SCFILE
+    fi
+
     # Check if a WPA key is provided
     if [ -n "$WIRELESS_WPAKEY" ]; then
         cat <<EOF >> $SCFILE
